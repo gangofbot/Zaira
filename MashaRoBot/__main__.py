@@ -76,14 +76,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-HELLOW [👋](https://telegra.ph/file/9d49379aac9ae5724e886.jpg). I AM *ZAIRA*
+HELLOW [👋](https://telegra.ph/file/78137ee451df1ee83073e.jpg). I AM *SNEHA*
 `I'm here to help you to make your group managment task easier! TAP` *Commands* `Use buttons given below to know more about me.` 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ADD ZAIRA TO YOUR GROUP", url="t.me/ZairaRobot?startgroup=true"),
+            text="ADD SNEHA TO YOUR GROUP", url="t.me/Misssnehabot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="Masha_"),
@@ -93,14 +93,14 @@ buttons = [
         InlineKeyboardButton(
             text="💾 DEV", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/magiclmush"
+            text="👥 SUPPORT", url="https://t.me/BeautyTrackOfficial"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hello am [ZAIRA](https://telegra.ph/file/e83f3cd84f703864544f7.jpg) and here are my helpful commands let's go through this and if you have any doubts ask at my support group."""
+Hello am [SNEHA](https://telegra.ph/file/c4ac7a799bcd1fb6b3c59.jpg) and here are my helpful commands let's go through this and if you have any doubts ask at my support group."""
 
 
 DONATE_STRING = """No need.. I'm rich"""
@@ -348,16 +348,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Zaira*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Sneha*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
                  ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Zaira's licensed under the GNU General Public License v3.0_
-                 Here is the [SUPPORT](https://t.me/magiclmush).
-                 If you have any question about Zaira, let us know at @magicalmush.""",
+                 \n_Sneha's licensed under the GNU General Public License v3.0_
+                 Here is the [SUPPORT](https://t.me/BeautyTrackOfficial).
+                 If you have any question about Sneha, let us know at @BeautyTrackOfficial.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -383,8 +383,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Zaira* THIS BOT CURRENTLY A CLOSED SOURCE CONATCT DEV FOR REPO
-                 \nHere is the [DEV](https://t.me/psykd) .""",
+            text=""" Hi..🤗 I'm *Sneha* THIS BOT CURRENTLY A CLOSED SOURCE CONATCT DEV FOR REPO
+                 \nHere is the [DEV](https://t.me/gangstersstore) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -631,7 +631,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1834522332 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
